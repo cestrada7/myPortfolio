@@ -297,11 +297,18 @@ nav .fa-bars{
   }
   nav .fa-circle-xmark{
     display: block;
-    font-size: 25px;
+    font-size: 35px;
   }
+  nav .fa-circle-xmark:active{
+    transform: rotate(45deg);
+  }
+
   nav .fa-bars{
     display: block;
     font-size: 25px;
+  }
+  nav .fa-bars:active{
+    transform: scale(.9);
   }
   nav ul{
     background: #2ecc71;
