@@ -295,7 +295,11 @@ nav .fa-bars{
   .header-text h1{
     font-size: 30px;
   }
-  nav .fa-circle-xmark, .fa-bars{
+  nav .fa-circle-xmark{
+    display: block;
+    font-size: 25px;
+  }
+  nav .fa-bars{
     display: block;
     font-size: 25px;
   }
