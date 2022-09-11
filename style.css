@@ -274,10 +274,12 @@ form .btn2{
   cursor: pointer;
 }
 /* ---------------------------MEDIA QUERY----------------------- */
-nav .fa-circle-xmark, .fa-bars{
+nav .fa-circle-xmark{
   display: none;
 }
-
+nav .fa-bars{
+  display: none;
+}
 
 @media only screen and (max-width: 600px){
   #header{
