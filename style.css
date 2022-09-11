@@ -274,9 +274,14 @@ form .btn2{
 nav .fa-circle-xmark, .fa-bars{
   display: none;
 }
+
+
 @media only screen and (max-width: 600px){
   #header{
-    background-image: linear-gradient(rgba(3, 4, 7, 0.8), rgba(5, 10, 30, 0.8)), url(/Images/myPicture.png);
+    background-image: linear-gradient(rgba(3, 4, 7, 0.8), rgba(5, 10, 30, 0.8)), url(Images/mediaQueryBg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
   }
   .header-text{
     margin-top: 95%;
