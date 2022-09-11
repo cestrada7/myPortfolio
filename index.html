@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>My Portfolio Website</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+		rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+	<link type="image/png" sizes="193x159" rel="icon" href="favicon/favicon.ico">
+	<script src="https://kit.fontawesome.com/82fac282cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<p class="logo">Port<span>folio</span></p>
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+				</ul>
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+			</nav>
+			<div class="header-text">
+				<p>Web Developer</p>
+				<h1>Hi, I'm <span>CHUCK</span></h1>
+				<p>This is my official Portfolio</p>
+			</div>
+		</div>
+	</div>
+	<!--------------ABOUT------------------------->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="Images/aboutMe.jpeg" alt="">
+				</div>
+				<div class="about-col-2">
+					<h2 class="sub-title">About Me</h2>
+					<p>Hello, thank you for taking time to read. My name is Chuck, a career shifter. I'm new to web development but with determination and dedication I can learn a lot from my work. I love to explore new technologies and work on different projects. I love to code and build things, but there's something else that I like to do more than programming. That's being at the beach with my family! </p>
+
+					<div>
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+							<p class="tab-links" onclick="opentab('experience')">Experience</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li><span>HTML & CSS</span><br>Building website using HTML & CSS</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li><span>KodeGo Bootcamp</span><br>July 2022 - November 2022</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li><span>2022</span><br>KodeGo Bootcamp</li>
+								<li><span>2021</span><br>TESDA Web Development I</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-----------------------PORTFOLIO-------------------------------->
+	<div id="portfolio">
+		<div class="container">
+			<h2 class="sub-title">My Portfolio</h2>
+			<div class="work-list">
+				<div class="work">
+					<img src="Images/pexels-charles-1851164 (2).jpg">
+					<div class="layer">
+						<h3>KodeGo Exercise</h3>
+						<p>HTML Elements Exercise</p>
+						<a href="https://cestrada7.github.io/Intro-To-HTML/" target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="Images/pexels-markus-winkler-4101343 (2).jpg">
+					<div class="layer">
+						<h3>KodeGo Exercise</h3>
+						<p>HTML & CSS - Building resume using tables</p>
+						<a href="https://cestrada7.github.io/Word-to-html/" target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="/Images/pexels-rachel-claire-4577860.jpg">
+					<div class="layer">
+						<h3>KodeGo Exercise</h3>
+						<p>Creating a Tea Shop Website</p>
+						<a href="https://cestrada7.github.io/RL-TeaShop/" target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--------------------------CONTACT--------------------------->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h2 class="sub-title">Contact Me</h2>
+					<p><i class="fa-solid fa-paper-plane"></i>chuck.estrada111@gmail.com</p>
+					<p><i class="fa-solid fa-square-phone"></i>123456789</p>
+					<!-- <h3>Let's Connect</h3> -->
+					<div class="social-icons">
+						<a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+					<a href="" download class="btn btn2">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form>
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<script>
+
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+		function opentab(tabname){
+			for(tablink of tablinks){
+				tablink.classList.remove("active-link");
+			}
+			for(tabcontent of tabcontents){
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+		
+
+	</script>
+	<script>
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu(){
+			sidemenu.style.right = "0";
+		}
+		function closemenu(){
+			sidemenu.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>
