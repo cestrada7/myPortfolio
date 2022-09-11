@@ -15,6 +15,9 @@ body{
   background-size: cover;
   background-position: center;
 }
+html{
+  scroll-behavior: smooth;
+}
 .container{
   padding: 15px 10%;
 }
@@ -334,4 +337,9 @@ nav .fa-circle-xmark, .fa-bars{
   .contact-left, .contact-right{
     flex-basis: 100%;
   }
+}
+#msg{
+  color: #2ecc71;
+  margin-top: -40px;
+  display: block;
 }
