@@ -69,6 +69,19 @@ nav ul li a:hover::after{
 .header-text span{
   color: #2ecc71;
 }
+/* .logo{
+  font-size: 40px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 35px;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  background-image: linear-gradient(to right, #fff, #2ecc71);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -180px 0;
+  animation: backcolor 5s linear infinite alternate;
+} */
 /*-----------------ABOUT-------------------- */
 #about{
   padding: 80px 0;
@@ -203,6 +216,7 @@ nav ul li a:hover::after{
   height: 100%;
 }
 
+
 /* ----------------------------CONTACT---------------------- */
 
 .contact-left{
@@ -295,6 +309,10 @@ nav .fa-bars{
   .header-text h1{
     font-size: 30px;
   }
+  /* .officialPortfolio{
+    font-size: 23px;
+    background-position: -300px 0;
+  } */
   nav .fa-circle-xmark{
     display: block;
     font-size: 35px;
@@ -356,3 +374,10 @@ nav .fa-bars{
   margin-top: -40px;
   display: block;
 }
+
+/* -----------------ANIMATION----------------- */
+/* @keyframes backcolor{
+  100%{
+    background-position: 0 0;
+  }
+} */

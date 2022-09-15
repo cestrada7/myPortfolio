@@ -14,12 +14,14 @@
   <link rel="stylesheet" href="style.css">
 	<link type="image/png" sizes="193x159" rel="icon" href="favicon/favicon.ico">
 	<script src="https://kit.fontawesome.com/82fac282cd.js" crossorigin="anonymous"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
 </head>
 <body>
 	<div id="header">
 		<div class="container">
 			<nav>
-				<p class="logo">Port<span>folio</span></p>
+				<p class="logo">Portfo<span>lio</span></p>
 				<ul id="sidemenu">
 					<li><a href="#header">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -32,7 +34,7 @@
 			<div class="header-text">
 				<p>Web Developer</p>
 				<h1>Hi, I'm <span>CHUCK</span></h1>
-				<p>This is my official Portfolio</p>
+				<p class="officialPortfolio">This is my official Portfolio</p>
 			</div>
 		</div>
 	</div>
@@ -40,10 +42,10 @@
 	<div id="about">
 		<div class="container">
 			<div class="row">
-				<div class="about-col-1">
+				<div class="about-col-1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
 					<img src="Images/aboutMe.jpeg" alt="Profile Picture">
 				</div>
-				<div class="about-col-2">
+				<div class="about-col-2" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
 					<h2 class="sub-title">About Me</h2>
 					<p>Hello, thank you for taking time to read. My name is Chuck, a career shifter. I'm new to web development but with determination and dedication I can learn a lot from my work. I love to explore new technologies and work on different projects. I love to code and build things, but there's something else that I like to do more than programming. That's being at the beach with my family! </p>
 
@@ -77,8 +79,8 @@
 	<!-- ---------------------PORTFOLIO------------------------------ -->
 	<div id="portfolio">
 		<div class="container">
-			<h2 class="sub-title">My Portfolio</h2>
-			<div class="work-list">
+			<h2 class="sub-title" data-aos="flip-down" data-aos-delay="500" data-aos-duration="1000">My Portfolio</h2>
+			<div class="work-list" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="1000">
 				<div class="work">
 					<img src="Images/pexels-charles-1851164.jpg" alt="Sample Work Image">
 					<div class="layer">
@@ -109,7 +111,7 @@
 
 	<!-- ------------------------CONTACT------------------------- -->
 	<div id="contact">
-		<div class="container">
+		<div class="container" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="1000">
 			<div class="row">
 				<div class="contact-left">
 					<h2 class="sub-title">Contact Me</h2>
@@ -186,6 +188,12 @@
 				})
 				.catch(error => console.error('Error!', error.message))
 		})
+	</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			once: true
+		});
 	</script>
 </body>
 </html>
